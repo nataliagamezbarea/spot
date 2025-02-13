@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: Spotify Bold;
-  src: url(/src/fonts/SpotifyMix-Bold.ttf);
+  src: url(/src/fonts/SpotifyMix-Bold.ttf)
 }
 * {
   border: 0;
@@ -21,15 +21,13 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 1fr 0.1fr 1fr;
-  grid-template-rows: 0.2fr 4fr 3fr;
-  height: 100%; /* si no la barra no funciona */
+  grid-template-columns: 0.5fr 2fr;
   grid-template-areas:
     "nav nav"
     "biblioteca inicio"
     "reproduccion reproduccion";
-  gap: 20px;
 }
+
 
 nav {
   grid-area: nav;
@@ -41,16 +39,27 @@ nav {
   grid-area: biblioteca;
   display: flex;
   flex-direction: column;
-  overflow-x: scroll;
+  overflow-y: scroll;
   background-color: #121212;
   border-radius: 10px;
   justify-content: space-between;
   gap: 10px;
   padding: 12px;
-  height: 82vh;
+  height: 81vh; /* scroll*/
 }
 
+.inicio {
+  grid-area: inicio;
+  background-image: linear-gradient(#050F17 10% , #121212 90%);
+  
+}
+
+h2,
+h3 {
+  font-weight: normal;
+}
 .reproduccion {
+  margin-top: 10px;
   grid-area: reproduccion;
   display: flex;
   justify-content: space-between;
@@ -82,9 +91,6 @@ nav {
   padding-right: 8px;
 }
 
-.center.nav {
-  padding-left: 50px;
-}
 .flex {
   display: flex;
   gap: 10px;
@@ -168,6 +174,12 @@ input {
   padding: 10px;
 }
 
+.inicio .buttons {
+  padding-top: 20px;
+  position: fixed;
+  background-color: #050F17;
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -236,7 +248,157 @@ b {
   height: 33px;
 }
 
-#text-biblioteca {
+.boton-spotify:hover {
+  transform: none;
+  filter: none;
+}
+
+.nombre-lista span {
+  font-size: 30px;
+  line-height: 0.2; /* solucionar el . no se alinea */
+}
+
+.nombre-lista,
+nombre-artista {
+  display: flex;
+  font-size: 14px;
+  gap: 5px;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: gray;
+}
+
+a.circulo.play-song {
+  background: white;
   padding: 10px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+}
+
+.player p {
+  font-size: 12px;
+}
+
+.reproduccion .right {
+  margin-right: 20px;
+}
+
+.reproduccion .left {
+  gap: 12px;
+}
+
+.reproduccion h3 {
+  font-size: 14px;
+}
+
+.reproduccion h3:hover  , .reproduccion .song p:hover{
+  text-decoration: underline;
+}
+
+
+.reproduccion .song p {
+  font-size: 12px;
   color: #a8a8a8;
+}
+
+.reproductor:hover  {
+  background-color: #1ED760;
+}
+
+
+a.active {
+  background: white;
+  color: black;
+  margin-left: 30px;
+}
+
+
+.albums-inicio {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4 , 1fr);
+  grid-template-rows: repeat(2,1fr);
+  padding-top: 70px;
+  padding-left: 10px;
+  
+}
+
+.albums-inicio .album {
+  display: flex;
+  align-items: center;
+}
+
+.albums-inicio .album {
+  background-color: rgba(215 , 215, 215,0.2);
+}
+
+.albums-inicio .album  img {
+  width: 50px;
+  border-radius: 1px;
+}
+
+.reproduccion .img-song {
+  width: 60px;
+  padding: 10px;
+}
+
+img.circle-play {
+  height: 20px;
+}
+
+.container-circle-play {
+  display: flex;
+  height: auto;
+  width: 30px;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  background-color: #1ED760;
+  border-radius: 50%;
+  display: none; 
+  margin-right: 20px;
+}
+
+ .album.flex:hover .container-circle-play{
+  display: block;
+  display: flex;
+  height: auto;
+}
+
+.genero-container {
+  background-color: rebeccapurple;
+  height: 200px;
+  width: 100px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.generos {
+  display: flex;
+  max-width: 1500px;
+  overflow-y: scroll;
+}
+
+
+
+@media only screen and (max-width:1000px) {
+  .albums-inicio {
+    grid-template-columns: repeat(2 , 1fr);
+  }
+}
+
+
+@media only screen and (max-width:800px) {
+  .albums-inicio {
+    grid-template-columns: repeat(1 , 1fr);
+  }
 }
