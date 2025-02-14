@@ -57,7 +57,7 @@ img#Logo-Amazon {
   padding-top: 45vh;
 }
 
-.producto {
+.producto-container {
   background-color: rgb(255, 255, 255);
 }
 
@@ -67,7 +67,7 @@ img#Logo-Amazon {
   gap: 10px;
 }
 
-.productos {
+.producto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -81,7 +81,7 @@ body {
   padding-right: 150px;
 }
 
-.productos.diferentes {
+.producto.diferentes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
