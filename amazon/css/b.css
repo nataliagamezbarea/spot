@@ -1,3 +1,25 @@
+* {
+    margin: 0;
+}
+
+nav {
+    background-color: #131921;
+    width: 130vw;
+    padding-top: 20px;
+    padding-left: 10px;
+    display: flex;
+    color: white;
+
+}
+
+nav img.icono {
+    width: 25.2px;
+}
+
+img#Logo-Amazon{
+    width: 120px;
+}
+
 .fondo {
     background-image: url("https://m.media-amazon.com/images/I/711NdF5k91L._SX3000_.jpg");
     height: 50vh;
@@ -65,6 +87,21 @@ body {
     display: flex;
 }
 
+input {
+    width: 30%;
+    height: 20px;
+}
+
+select {
+    height: 26px;
+}
+
 .xd {
     overflow-x:scroll;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
 }
