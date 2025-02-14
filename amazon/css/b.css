@@ -105,3 +105,16 @@ select {
     display: flex;
     flex-direction: column;
 }
+
+nav button {
+    background-color:#F3A847 ;
+
+}
+
+nav a:hover .div {
+    background-color: red;
+
+}
+.column:hover {
+    border: solid 1px white;
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 650" width="40" height="20">
+  <rect width="900" height="650" fill="#b22234"/>
+  <path stroke="#fff" stroke-width="60" d="M0 75h900M0 195h900M0 315h900M0 435h900M0 555h900"/>
+  <rect width="360" height="350" fill="#3c3b6e"/>
+  <g fill="#fff">
+    <g id="s">
+      <polygon points="49.4,6.1 19.9,95.2 79.4,36.6 19.9,36.6 79.4,95.2"/>
+    </g>
+    <use x="98.8" href="#s"/>
+    <use x="197.6" href="#s"/>
+    <use x="296.4" href="#s"/>
+    <use x="395.2" href="#s"/>
+    <use x="494" href="#s"/>
+    <use x="49.4" y="70" href="#s"/>
+    <use x="148.2" y="70" href="#s"/>
+    <use x="247" y="70" href="#s"/>
+    <use x="345.8" y="70" href="#s"/>
+    <use x="444.6" y="70" href="#s"/>
+    <use x="49.4" y="140" href="#s"/>
+    <use x="148.2" y="140" href="#s"/>
+    <use x="247" y="140" href="#s"/>
+    <use x="345.8" y="140" href="#s"/>
+    <use x="444.6" y="140" href="#s"/>
+    <use x="49.4" y="210" href="#s"/>
+    <use x="148.2" y="210" href="#s"/>
+    <use x="247" y="210" href="#s"/>
+    <use x="345.8" y="210" href="#s"/>
+    <use x="444.6" y="210" href="#s"/>
+    <use x="49.4" y="280" href="#s"/>
+    <use x="148.2" y="280" href="#s"/>
+    <use x="247" y="280" href="#s"/>
+    <use x="345.8" y="280" href="#s"/>
+    <use x="444.6" y="280" href="#s"/>
+  </g>
+</svg>
