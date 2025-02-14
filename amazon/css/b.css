@@ -1,120 +1,160 @@
+@font-face {
+  font-family: Amazon;
+  src: url("/src/font/AmazonEmber_Rg.ttf");
+}
 * {
-    margin: 0;
+  margin: 0;
+  font-family: "Amazon", Courier, monospace;
 }
 
 nav {
-    background-color: #131921;
-    width: 130vw;
-    padding-top: 20px;
-    padding-left: 10px;
-    display: flex;
-    color: white;
-
+  background-color: #131921;
+  width: 99vw;
+  display: flex;
+  color: white;
+  gap: 20px;
+  height: 7vh;
+  display: flex;
+  align-items: center;
 }
 
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+}
+
+.grey {
+  color: #cccccc;
+}
+
+a {
+  text-decoration: none;
+}
 nav img.icono {
-    width: 25.2px;
+  width: 25.2px;
 }
 
-img#Logo-Amazon{
-    width: 120px;
+.enviar {
+  font-size: 14px;
+}
+
+.enviar p {
+  font-size: 12px;
+}
+
+img#Logo-Amazon {
+  width: 120px;
 }
 
 .fondo {
-    background-image: url("https://m.media-amazon.com/images/I/711NdF5k91L._SX3000_.jpg");
-    height: 50vh;
-    padding-top: 45vh;
+  background-image: url("https://m.media-amazon.com/images/I/711NdF5k91L._SX3000_.jpg");
+  height: 50vh;
+  padding-top: 45vh;
 }
 
-.box {
-    background-color: rgb(255, 255, 255);
+.producto {
+  background-color: rgb(255, 255, 255);
 }
 
-.boxes {
-    display: grid;
-    grid-template-columns: repeat(4 , 1fr);
-    gap: 10px;
+.cuadricula.flex {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
-
 
 .productos {
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 body {
-    background-color: #E3E6E6;
+  background-color: #e3e6e6;
 }
 
 .container {
-    padding-left: 150px;
-    padding-right: 150px;
-
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .productos.diferentes {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
     "imagen imagen imagen"
-    "imagen2 imagen3 imagen4"
-    ;
+    "imagen2 imagen3 imagen4";
 }
 
 .imagen-diferente {
-    grid-area: imagen;
+  grid-area: imagen;
 }
 
 .imagen-diferente img {
-    background-color: red; /* Esto no afectará la imagen directamente, ya que background-color solo afecta a elementos con un área visible */
-    width: 100%;
+  background-color: red; /* Esto no afectará la imagen directamente, ya que background-color solo afecta a elementos con un área visible */
+  width: 100%;
 }
 
-
 .imagen-2 {
-    grid-area: imagen2;
+  grid-area: imagen2;
 }
 
 .imagen-3 {
-    grid-area: imagen3;
+  grid-area: imagen3;
 }
 
 .imagen-4 {
-    grid-area: imagen4;
+  grid-area: imagen4;
 }
 
 .flex {
-    display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 input {
-    width: 30%;
-    height: 20px;
+  height: 30px;
+  width: 46vw;
+  margin-bottom: 10px;
 }
 
 select {
-    height: 26px;
+  height: 37px;
+  border-radius: 7px;
+  padding: 10px;
+  width: 200px;
+  color: rgba(0, 0, 0, 0.681);
 }
 
 .xd {
-    overflow-x:scroll;
+  overflow-x: scroll;
 }
 
-
 .column {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
 }
 
 nav button {
-    background-color:#F3A847 ;
+  background-color: #f3a847;
+}
 
+img#logo-carrito {
+  width: 70px;
 }
 
 nav a:hover .div {
-    background-color: red;
-
+  background-color: red;
 }
 .column:hover {
-    border: solid 1px white;
+  border: solid 1px white;
+}
+
+img.carrito {
+  width: 230px;
 }
