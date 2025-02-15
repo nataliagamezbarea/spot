@@ -428,7 +428,7 @@ img.circle-play {
   position: relative;
 }
 
-.circlee {
+.circle-play-container {
   position: absolute;
   bottom: 0;
   right: 0;
