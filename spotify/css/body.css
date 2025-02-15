@@ -9,10 +9,10 @@
 }
 * {
   border: 0;
-  padding: 0;
-  margin: 0;
   font-family: "Spotify", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 16px;
+  margin: 0;
+  padding: 0;
 }
 body {
   background-color: black;
@@ -21,37 +21,37 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: 0.5fr 2fr;
   grid-template-areas:
     "nav nav"
     "biblioteca inicio"
     "reproduccion reproduccion";
+  grid-template-columns: 0.5fr 2fr;
 }
 
 nav {
-  grid-area: nav;
   display: flex;
+  grid-area: nav;
   justify-content: space-between;
 }
 
 .biblioteca {
-  grid-area: biblioteca;
-  display: flex;
-  flex-direction: column;
-  overflow-y: scroll;
   background-color: #121212;
   border-radius: 10px;
-  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
   gap: 10px;
-  padding: 12px;
+  grid-area: biblioteca;
   height: 81vh; /* scroll*/
+  justify-content: space-between;
+  overflow-y: scroll;
+  padding: 12px;
 }
 
 .inicio {
-  grid-area: inicio;
   background-image: linear-gradient(#050f17 10%, #121212 90%);
-  overflow-x: scroll;
+  grid-area: inicio;
   height: 81vh;
+  overflow-x: scroll;
   padding: 10px;
 }
 
@@ -60,32 +60,32 @@ h3 {
   font-weight: normal;
 }
 .reproduccion {
-  margin-top: 10px;
-  grid-area: reproduccion;
   display: flex;
+  grid-area: reproduccion;
   justify-content: space-between;
+  margin-top: 10px;
 }
 
 .left {
+  align-items: center;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
   width: 100%;
 }
 
 .center {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
 .right {
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
-  width: 100%;
+  display: flex;
   gap: 10px;
+  justify-content: flex-end;
+  width: 100%;
 }
 
 .right.nav {
@@ -103,9 +103,9 @@ h3 {
 }
 
 a {
-  text-decoration: none;
   color: #a8a8a8;
   padding-left: 10px;
+  text-decoration: none;
 }
 
 a:hover,
@@ -123,75 +123,75 @@ a:hover img {
 }
 
 .circulo {
+  align-items: center;
   background-color: #121212;
   border-radius: 50%;
-  padding: 14px;
   display: flex;
-  align-items: center;
+  padding: 14px;
 }
 
 .circulo.perfil {
   background-color: #ef6f9b;
   color: black;
-  padding: 10px;
   height: 14px;
+  padding: 10px;
 }
 
 .search {
-  display: flex;
-  margin-left: 10px;
   background-color: #121212;
   border-radius: 50px;
+  display: flex;
   gap: 10px;
   justify-content: space-between;
+  margin-left: 10px;
   padding: 10px 14px 10px;
 }
 
 input {
-  margin-left: 10px;
   background-color: transparent;
   color: white;
-  text-decoration: none;
+  margin-left: 10px;
   outline: none; /* permite quitar el borde al pulsar */
+  text-decoration: none;
   width: 300px;
 }
 
 .linea {
-  width: 1px;
-  margin: 1px;
   background-color: #b3b3b3;
   height: 22px;
+  margin: 1px;
   margin-left: 10px;
+  width: 1px;
 }
 
 .button-navbar {
   background-color: white;
-  color: black;
   border-radius: 50px;
+  color: black;
+  margin-right: 20px;
   padding: 5px;
+  padding: 10px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-right: 20px;
-  padding: 10px;
 }
 
 .inicio .buttons {
+  background-color: #050f17;
   padding-top: 20px;
   position: fixed;
-  background-color: #050f17;
 }
 
 .menu {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   width: 100%;
 }
 
 .albums img,
 .artists img {
-  width: 50px;
   border-radius: 10px;
+  width: 50px;
 }
 
 .artist img {
@@ -200,12 +200,12 @@ input {
 
 .buttons a {
   background-color: #333333;
-  color: white;
   border-radius: 50px;
+  color: white;
+  padding-bottom: 4px;
   padding-left: 12px;
   padding-right: 10px;
   padding-top: 3px;
-  padding-bottom: 4px;
 }
 
 .añadir-playlist {
@@ -214,19 +214,19 @@ input {
 }
 
 .añadir-playlist img {
-  display: flex;
-  width: 16.5px;
   align-items: center;
+  display: flex;
   justify-items: center;
+  width: 16.5px;
 }
 
 .reproductor {
-  height: 5px;
-  width: 390px;
-  border-radius: 10px;
   background-color: grey;
+  border-radius: 10px;
   display: flex;
+  height: 5px;
   justify-content: space-between;
+  width: 390px;
 }
 
 .reproduccion {
@@ -236,8 +236,8 @@ input {
 
 b {
   font-family: "Spotify Bold", Courier, monospace;
-  font-weight: 100;
   font-size: 14px;
+  font-weight: 100;
 }
 
 .sonido {
@@ -245,13 +245,13 @@ b {
 }
 
 #icono-spotify {
-  margin-left: 25px;
   height: 33px;
+  margin-left: 25px;
 }
 
 .boton-spotify:hover {
-  transform: none;
   filter: none;
+  transform: none;
 }
 
 .nombre-lista span {
@@ -280,8 +280,8 @@ a.circulo.play-song {
 }
 
 .player {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-items: center;
 }
 
@@ -307,8 +307,8 @@ a.circulo.play-song {
 }
 
 .reproduccion .song p {
-  font-size: 12px;
   color: #a8a8a8;
+  font-size: 12px;
 }
 
 .reproductor:hover {
@@ -326,13 +326,13 @@ a.active {
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  padding-top: 70px;
   padding-left: 10px;
+  padding-top: 70px;
 }
 
 .albums-inicio .album {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .albums-inicio .album {
@@ -340,13 +340,13 @@ a.active {
 }
 
 .albums-inicio .album img {
-  width: 50px;
   border-radius: 1px;
+  width: 50px;
 }
 
 .reproduccion .img-song {
-  width: 60px;
   padding: 10px;
+  width: 60px;
 }
 
 img.circle-play {
@@ -354,16 +354,16 @@ img.circle-play {
 }
 
 .container-circle-play {
-  display: flex;
-  height: auto;
-  width: 30px;
   align-items: center;
-  padding: 10px;
-  justify-content: center;
   background-color: #1ed760;
   border-radius: 50%;
+  display: flex;
   display: none;
+  height: auto;
+  justify-content: center;
   margin-right: 20px;
+  padding: 10px;
+  width: 30px;
 }
 
 .album.flex:hover .container-circle-play {
@@ -384,10 +384,10 @@ img.circle-play {
 
 .genero-container {
   background-color: rebeccapurple;
-  height: 200px;
-  width: 100px;
   border-radius: 10px;
+  height: 200px;
   margin: 10px;
+  width: 100px;
 }
 
 .generos {
@@ -397,8 +397,8 @@ img.circle-play {
 }
 
 .img-artist img {
-  width: 10px;
   height: 10px;
+  width: 10px;
 }
 
 .popular img {
@@ -429,11 +429,11 @@ img.circle-play {
 }
 
 .circle-play-container {
-  position: absolute;
   bottom: 0;
+  height: 40px;
+  position: absolute;
   right: 0;
   width: 40px;
-  height: 40px;
 }
 
 @media only screen and (max-width: 1000px) {
