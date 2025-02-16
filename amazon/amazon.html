@@ -82,7 +82,10 @@
             />
 
             <div class="flecha-arriba">
-              <img src="src/icons/flecha-arriba.svg" alt="flecha-arriba-icono" />
+              <img
+                src="src/icons/flecha-arriba.svg"
+                alt="flecha-arriba-icono"
+              />
             </div>
           </div>
         </a>
@@ -104,18 +107,51 @@
         </div>
       </div>
 
-      <div class="flex">
-        <div class="column">
-          <a href=""> Hola , Identificate </a>
-          <b
-            >Cuenta y listas
+      <div class="identificate-container flex">
+        <a href="">
+          <div class="column">
+            <a href=""> Hola , Identificate </a>
+            <b
+              >Cuenta y listas
+              <img
+                src="src/icons/flecha-desplegable.svg"
+                alt="flecha-desplegable-icono"
+              />
+            </b>
+          </div>
+          <div class="">
             <img
               src="src/icons/flecha-desplegable.svg"
               alt="flecha-desplegable-icono"
             />
-          </b>
-        </div>
 
+            <div class="flecha-arriba">
+              <img
+                src="src/icons/flecha-arriba.svg"
+                alt="flecha-arriba-icono"
+              />
+            </div>
+          </div>
+        </a>
+
+        <div class="panel-identificate column">
+          <label> <input type="radio" name="language" /> English - EN </label>
+          <label> <input type="radio" name="language" /> Español - ES </label>
+          <label> <input type="radio" name="language" /> العربية - AR </label>
+          <label> <input type="radio" name="language" /> Deutsch - DE </label>
+          <label> <input type="radio" name="language" /> עברית - HE </label>
+          <label> <input type="radio" name="language" /> 한국어 - KO </label>
+          <label> <input type="radio" name="language" /> português - PT </label>
+          <label>
+            <input type="radio" name="language" /> 中文 (简体) - ZH
+          </label>
+          <label>
+            <input type="radio" name="language" /> 中文 (繁體) - ZH
+          </label>
+        </div>
+      </div>
+
+      <div class="flex">
         <div class="column">
           <a href=""> Devoluciones</a>
           <b> y Pedidos</b>

@@ -159,7 +159,7 @@ img.carrito {
   width: 230px;
 }
 
-.idiomas-container {
+.idiomas-container  , .identificate-container {
   position: relative;
   gap: 10px;
 }
@@ -172,14 +172,24 @@ img.carrito {
   width: 260px;
   height: 570px;
   top: 120%;
+  display: none; 
+}
+
+.panel-identificate {
+  position: absolute;
+  top: 97%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  width: 600px;
+  height: 300px;
   display: none;
 }
 
 .flecha-arriba {
   position: absolute;
   top: 80%;
-  left: 80%;
-  display: none;
+  left: 40%;
+  display: none; 
 }
 
 .flecha-arriba img {
@@ -187,7 +197,7 @@ img.carrito {
 }
 
 .idiomas-container:hover .panel-idiomas,
-.idiomas-container:hover .flecha-arriba {
+.idiomas-container:hover .flecha-arriba  , .identificate-container:hover .panel-identificate , .identificate-container:hover .flecha-arriba {
   display: block;
   display: flex;
 }
