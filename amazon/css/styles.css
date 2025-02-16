@@ -116,7 +116,7 @@ body {
   justify-content: center;
 }
 
-input {
+.search-container input {
   height: 30px;
   width: 46vw;
   margin-bottom: 10px;
@@ -157,4 +157,37 @@ nav a:hover .div {
 
 img.carrito {
   width: 230px;
+}
+
+.idiomas-container {
+  position: relative;
+  gap: 10px;
+}
+
+.panel-idiomas {
+  position: absolute;
+  background-color: rgb(255, 246, 246);
+  color: black;
+  flex-direction: column;
+  width: 260px;
+  height: 570px;
+  top: 120%;
+  display: none;
+}
+
+.flecha-arriba {
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  display: none;
+}
+
+.flecha-arriba img {
+  width: 30px;
+}
+
+.idiomas-container:hover .panel-idiomas,
+.idiomas-container:hover .flecha-arriba {
+  display: block;
+  display: flex;
 }

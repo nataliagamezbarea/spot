@@ -3,8 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="css/b.css" />
+    <title>Amazon</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSHngPKg2Hls6mGIg2wDoUX5IqGyXobqOzQ&s"
+    />
   </head>
   <body>
     <nav>
@@ -67,15 +71,37 @@
         </div>
       </div>
 
-      <div>
+      <div class="idiomas-container flex">
         <a href="">
           <img src="src/icons/bandera-us.svg" alt="bandera-us-icono" />
           <a href=""> <b>ES</b> </a>
-          <img
-            src="src/icons/flecha-desplegable.svg"
-            alt="flecha-desplegable-icono"
-          />
+          <div class="">
+            <img
+              src="src/icons/flecha-desplegable.svg"
+              alt="flecha-desplegable-icono"
+            />
+
+            <div class="flecha-arriba">
+              <img src="src/icons/flecha-arriba.svg" alt="flecha-arriba-icono" />
+            </div>
+          </div>
         </a>
+
+        <div class="panel-idiomas column">
+          <label> <input type="radio" name="language" /> English - EN </label>
+          <label> <input type="radio" name="language" /> Español - ES </label>
+          <label> <input type="radio" name="language" /> العربية - AR </label>
+          <label> <input type="radio" name="language" /> Deutsch - DE </label>
+          <label> <input type="radio" name="language" /> עברית - HE </label>
+          <label> <input type="radio" name="language" /> 한국어 - KO </label>
+          <label> <input type="radio" name="language" /> português - PT </label>
+          <label>
+            <input type="radio" name="language" /> 中文 (简体) - ZH
+          </label>
+          <label>
+            <input type="radio" name="language" /> 中文 (繁體) - ZH
+          </label>
+        </div>
       </div>
 
       <div class="flex">
