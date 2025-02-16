@@ -112,11 +112,17 @@ body {
 
 .flex {
   display: flex;
+}
+
+nav .flex {
   align-items: center;
   justify-content: center;
 }
-
-.search-container input {
+.panel-identificate .flex {
+  align-items: baseline;
+  justify-content: baseline;
+}
+.search input {
   height: 30px;
   width: 46vw;
   margin-bottom: 10px;
@@ -159,7 +165,8 @@ img.carrito {
   width: 230px;
 }
 
-.idiomas-container  , .identificate-container {
+.idiomas-container,
+.identificate-container {
   position: relative;
   gap: 10px;
 }
@@ -172,7 +179,7 @@ img.carrito {
   width: 260px;
   height: 570px;
   top: 120%;
-  display: none; 
+  display: none;
 }
 
 .panel-identificate {
@@ -185,11 +192,15 @@ img.carrito {
   display: none;
 }
 
+.panel-identificate a {
+  color: black;
+}
+
 .flecha-arriba {
   position: absolute;
   top: 80%;
   left: 40%;
-  display: none; 
+  display: none;
 }
 
 .flecha-arriba img {
@@ -197,9 +208,28 @@ img.carrito {
 }
 
 .idiomas-container:hover .panel-idiomas,
-.idiomas-container:hover .flecha-arriba  , .identificate-container:hover .panel-identificate , .identificate-container:hover .flecha-arriba {
+.idiomas-container:hover .flecha-arriba,
+.identificate-container:hover .panel-identificate,
+.identificate-container:hover .flecha-arriba {
   display: block;
   display: flex;
 }
 
+.carrito-container {
+  position: relative;
+}
 
+.search:focus-within {
+  border: solid 5px #f08804;
+  border-radius: 10px;
+  height: auto;
+}
+.numero-carrito {
+  position: absolute;
+  top: 1%;
+  left: 38%;
+  bottom: 0;
+  color: #f08804;
+  font-size: 20px;
+  font-weight: 700;
+}

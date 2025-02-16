@@ -27,38 +27,40 @@
         </a>
       </div>
       <div class="flex">
-        <select name="" id="">
-          <option value="volvo">Todos los departamentos</option>
-          <option value="saab">Arte y artesanías</option>
-          <option value="opel">Automostriz</option>
-          <option value="audi">Bebé</option>
-          <option value="">Belleza y cuidado personal</option>
-          <option value="">Cine y TV</option>
-          <option value="">Computadoras</option>
-          <option value="">Deportes y actividades al aire libre</option>
-          <option value="">Electronicos</option>
-          <option value="">Equipaje</option>
-          <option value="">Herramientas y mejoramiento del lugar</option>
-          <option value="">Hogar y cocina</option>
-          <option value="">Industrial y científico</option>
-          <option value="">Insumos para mascotas</option>
-          <option value="">Juguetes y juegos</option>
-          <option value="">Libros</option>
-          <option value="">Modas de niñas</option>
-          <option value="">Modas de niños</option>
-          <option value="">Moda para Hombre</option>
-          <option value="">Moda para Mujer</option>
-          <option value="">Música MP3</option>
-          <option value="">Música , CD y vinilos</option>
-          <option value="">Ofertas</option>
-          <option value="">Prime Video</option>
-          <option value="">Salud y producto para el hogar</option>
-          <option value="">Sofware</option>
-          <option value="">Tienda Kindle</option>
-          <option value="">Tienda Videojuegos</option>
-        </select>
-        <div class="search-container">
+      
+        <div class="search">
+          
           <form action="">
+            <select name="" id="">
+              <option value="volvo">Todos los departamentos</option>
+              <option value="saab">Arte y artesanías</option>
+              <option value="opel">Automostriz</option>
+              <option value="audi">Bebé</option>
+              <option value="">Belleza y cuidado personal</option>
+              <option value="">Cine y TV</option>
+              <option value="">Computadoras</option>
+              <option value="">Deportes y actividades al aire libre</option>
+              <option value="">Electronicos</option>
+              <option value="">Equipaje</option>
+              <option value="">Herramientas y mejoramiento del lugar</option>
+              <option value="">Hogar y cocina</option>
+              <option value="">Industrial y científico</option>
+              <option value="">Insumos para mascotas</option>
+              <option value="">Juguetes y juegos</option>
+              <option value="">Libros</option>
+              <option value="">Modas de niñas</option>
+              <option value="">Modas de niños</option>
+              <option value="">Moda para Hombre</option>
+              <option value="">Moda para Mujer</option>
+              <option value="">Música MP3</option>
+              <option value="">Música , CD y vinilos</option>
+              <option value="">Ofertas</option>
+              <option value="">Prime Video</option>
+              <option value="">Salud y producto para el hogar</option>
+              <option value="">Sofware</option>
+              <option value="">Tienda Kindle</option>
+              <option value="">Tienda Videojuegos</option>
+            </select>
             <input type="text" placeholder="Buscar en Amazon" />
             <button type="submit">
               <img
@@ -111,31 +113,54 @@
         <a href="">
           <div class="column">
             <a href=""> Hola , Identificate </a>
-            <b
-              >Cuenta y listas
-              <img
-                src="src/icons/flecha-desplegable.svg"
-                alt="flecha-desplegable-icono"
-              />
-            </b>
+            <b>Cuenta y listas </b>
           </div>
-         
+          <div class="">
+            <img
+              src="src/icons/flecha-desplegable.svg"
+              alt="flecha-desplegable-icono"
+            />
+
+            <div class="flecha-arriba">
+              <img
+                src="src/icons/flecha-arriba.svg"
+                alt="flecha-arriba-icono"
+              />
+            </div>
+          </div>
         </a>
 
         <div class="panel-identificate column">
-          <label> <input type="radio" name="language" /> English - EN </label>
-          <label> <input type="radio" name="language" /> Español - ES </label>
-          <label> <input type="radio" name="language" /> العربية - AR </label>
-          <label> <input type="radio" name="language" /> Deutsch - DE </label>
-          <label> <input type="radio" name="language" /> עברית - HE </label>
-          <label> <input type="radio" name="language" /> 한국어 - KO </label>
-          <label> <input type="radio" name="language" /> português - PT </label>
-          <label>
-            <input type="radio" name="language" /> 中文 (简体) - ZH
-          </label>
-          <label>
-            <input type="radio" name="language" /> 中文 (繁體) - ZH
-          </label>
+          <div>
+            <a href="">Indentificate</a>
+          </div>
+          <div class="flex">
+            <p href="">¿Eres cliente nuevo?</p>
+            <a href="">Empieza aqui</a>
+          </div>
+
+        <div class="flex">
+          <div class="column">
+            <b>Tus listas</b>
+            <a href="">Crear una Lista </a>
+            <a href="">Encuentra una Lista o Lista de regalos </a>
+          </div>
+
+          <div class="column">
+            <b>Tu cuenta</b>
+            <a href="">Tu Cuenta</a>
+            <a href="">Cuenta</a>
+            <a href="">Pedidos</a>
+            <a href="">Recomendaciones</a>
+            <a href="">Historial de Búsqueda</a>
+            <a href=""> Lista de videos </a>
+            <a href=""> Compras y Rentas de Video </a>
+            <a href=""> Kindle Unlimited Contenido y dispositivos </a>
+            <a href="">Artículos de Subscribe & Save Membresías y suscripciones</a>
+
+            <a href=""> Biblioteca de Música</a>
+          </div>
+        </div>
         </div>
       </div>
 
@@ -144,7 +169,18 @@
           <a href=""> Devoluciones</a>
           <b> y Pedidos</b>
         </div>
-        <img class="carrito" src="src/icons/carrito.svg" alt="carrito-icono" />
+        <div class="carrito-container flex">
+          <img
+            class="carrito"
+            src="src/icons/carrito.svg"
+            alt="carrito-icono"
+          />
+          <div class="numero-carrito">
+            <span>O</span>
+          </div>
+
+          <b>Carrito</b>
+        </div>
       </div>
       <div>
         <br />
