@@ -39,7 +39,7 @@ nav {
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 25px;
   grid-area: biblioteca;
   height: 81vh; /* scroll*/
   justify-content: space-between;
@@ -48,7 +48,7 @@ nav {
 }
 
 .inicio {
-  background-image: linear-gradient(#050f17 10%, #121212 90%);
+  background-image: linear-gradient(#050f17 5%, #121212 90%);
   grid-area: inicio;
   height: 81vh;
   overflow-x: scroll;
@@ -71,6 +71,7 @@ h3 {
   display: flex;
   justify-content: flex-start;
   width: 100%;
+  gap: 10px;
 }
 
 .center {
@@ -202,10 +203,10 @@ input {
   background-color: #333333;
   border-radius: 50px;
   color: white;
-  padding-bottom: 4px;
-  padding-left: 12px;
+  padding-bottom: 5px;
+  padding-left: px;
   padding-right: 10px;
-  padding-top: 3px;
+  padding-top: 10px;
 }
 
 .añadir-playlist {
@@ -237,7 +238,6 @@ input {
 b {
   font-family: "Spotify Bold", Courier, monospace;
   font-size: 14px;
-  font-weight: 100;
 }
 
 .sonido {
@@ -272,6 +272,7 @@ nombre-artista {
 
 ::-webkit-scrollbar-thumb {
   background-color: gray;
+
 }
 
 a.circulo.play-song {
@@ -353,23 +354,11 @@ img.circle-play {
   height: 20px;
 }
 
-.container-circle-play {
-  align-items: center;
-  background-color: #1ed760;
-  border-radius: 50%;
-  display: flex;
-  display: none;
-  height: auto;
-  justify-content: center;
-  margin-right: 20px;
-  padding: 10px;
-  width: 30px;
-}
 
 .album.flex:hover .container-circle-play {
   display: block;
   display: flex;
-  height: auto;
+  height: 10px ;
 }
 
 .artist.popular:hover .container-circle-play {
@@ -434,6 +423,43 @@ img.circle-play {
   position: absolute;
   right: 0;
   width: 40px;
+}
+
+img.circle-play {
+  width: 10px;
+}
+
+.container-circle-play {
+  align-items: center;
+  background-color: #1ed760;
+  border-radius: 50%;
+  display: flex;
+  display: none; 
+  height: auto;
+  justify-content: center;
+  margin-right: 20px;
+  padding: 10px;
+  width: 30px;
+  height: 10px;
+}
+
+img.artist-img-home {
+  height: 150px;
+}
+
+
+b#text-biblioteca {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+
+
+p.flex.nombre-lista  , p.nombre-artista{
+  margin-top: 10px;
+  color: #b3b3b3;
+  font-size: 16px;
+
 }
 
 @media only screen and (max-width: 1000px) {
