@@ -134,8 +134,7 @@ a:hover img {
 .circulo.perfil {
   background-color: #ef6f9b;
   color: black;
-  height: 14px;
-  padding: 10px;
+  height: 10px;
 }
 
 .search {
@@ -178,8 +177,9 @@ input {
 
 .inicio .buttons {
   background-color: #050f17;
-  padding-top: 20px;
   position: fixed;
+  width: 100%;
+  margin: 0;
 }
 
 .menu {
@@ -200,13 +200,14 @@ input {
 }
 
 .buttons a {
-  background-color: #333333;
+  background-color: rgba(215, 215, 215, 0.2);
   border-radius: 50px;
   color: white;
   padding-bottom: 5px;
   padding-left: px;
   padding-right: 10px;
-  padding-top: 10px;
+  padding-top: 7px;
+  font-size: 14px;
 }
 
 .añadir-playlist {
@@ -272,7 +273,6 @@ nombre-artista {
 
 ::-webkit-scrollbar-thumb {
   background-color: gray;
-
 }
 
 a.circulo.play-song {
@@ -350,15 +350,9 @@ a.active {
   width: 60px;
 }
 
-img.circle-play {
-  height: 20px;
-}
-
-
 .album.flex:hover .container-circle-play {
   display: block;
   display: flex;
-  height: 10px ;
 }
 
 .artist.popular:hover .container-circle-play {
@@ -374,6 +368,7 @@ img.circle-play {
 .genero-container {
   background-color: rebeccapurple;
   border-radius: 10px;
+
   height: 200px;
   margin: 10px;
   width: 100px;
@@ -391,7 +386,7 @@ img.circle-play {
 }
 
 .popular img {
-  width: 140px;
+  width: 224px;
 }
 
 .artist.popular .nombre-artista {
@@ -425,8 +420,8 @@ img.circle-play {
   width: 40px;
 }
 
-img.circle-play {
-  width: 10px;
+.circle-play-container {
+  right: 20px;
 }
 
 .container-circle-play {
@@ -434,34 +429,97 @@ img.circle-play {
   background-color: #1ed760;
   border-radius: 50%;
   display: flex;
-  display: none; 
+  display: none;
   height: auto;
   justify-content: center;
   margin-right: 20px;
   padding: 10px;
-  width: 30px;
-  height: 10px;
+  width: 20px;
 }
 
 img.artist-img-home {
-  height: 150px;
+  height: 228px;
+  width: 225px;
 }
-
 
 b#text-biblioteca {
   color: #b3b3b3;
   font-size: 14px;
 }
 
-
-
-p.flex.nombre-lista  , p.nombre-artista{
+p.flex.nombre-lista,
+p.nombre-artista {
   margin-top: 10px;
   color: #b3b3b3;
   font-size: 16px;
-
+}
+.album .flex {
+  height: 50px;
 }
 
+.inicio b {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+h2.title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.album.flex:hover {
+  background-color: #333333;
+}
+
+.container-artist {
+  padding: 10px;
+}
+
+.container-album {
+  padding: 10px;
+}
+
+footer {
+  padding: 30px;
+  font-size: 16px;
+}
+
+footer .column {
+  padding: 70px;
+  gap: 10px;
+}
+
+footer a {
+  padding-left: 0;
+}
+
+.circulo-redes-sociales {
+  height: 10px;
+  width: 14px;
+  background-color: #2a2a2a;
+}
+
+.redes-sociales {
+  padding: 60px;
+  padding-top: 90px;
+}
+
+footer .linea {
+  background-color: red;
+}
+
+.linea-divisoria {
+  width: 100%;
+  margin: 10px;
+  height: 1px;
+}
+
+p#copyright {
+  font-size: 14px;
+  padding: 10px;
+}
 @media only screen and (max-width: 1000px) {
   .albums-inicio {
     grid-template-columns: repeat(2, 1fr);
