@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/body.css" />
     <link
       rel="icon"
       href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCSHngPKg2Hls6mGIg2wDoUX5IqGyXobqOzQ&s"
@@ -14,7 +15,7 @@
     <nav>
       <img id="Logo-Amazon" src="src/amazon_logo.png" alt="amazon-logo" />
       <div class="column">
-        <a class="flex" href="">
+        <a class="flex" href="#">
           <img
             class="icono"
             src="src/icons/location.svg"
@@ -28,36 +29,42 @@
       </div>
       <div class="flex">
         <div class="search">
-          <form action="">
-            <select name="" id="">
-              <option value="volvo">Todos los departamentos</option>
-              <option value="saab">Arte y artesanías</option>
-              <option value="opel">Automostriz</option>
-              <option value="audi">Bebé</option>
-              <option value="">Belleza y cuidado personal</option>
-              <option value="">Cine y TV</option>
-              <option value="">Computadoras</option>
-              <option value="">Deportes y actividades al aire libre</option>
-              <option value="">Electronicos</option>
-              <option value="">Equipaje</option>
-              <option value="">Herramientas y mejoramiento del lugar</option>
-              <option value="">Hogar y cocina</option>
-              <option value="">Industrial y científico</option>
-              <option value="">Insumos para mascotas</option>
-              <option value="">Juguetes y juegos</option>
-              <option value="">Libros</option>
-              <option value="">Modas de niñas</option>
-              <option value="">Modas de niños</option>
-              <option value="">Moda para Hombre</option>
-              <option value="">Moda para Mujer</option>
-              <option value="">Música MP3</option>
-              <option value="">Música , CD y vinilos</option>
-              <option value="">Ofertas</option>
-              <option value="">Prime Video</option>
-              <option value="">Salud y producto para el hogar</option>
-              <option value="">Sofware</option>
-              <option value="">Tienda Kindle</option>
-              <option value="">Tienda Videojuegos</option>
+          <form action="#">
+            <select name="tipo" id="#">
+              <option value="departamentos">Todos los departamentos</option>
+              <option value="arte">Arte y artesanías</option>
+              <option value="automostriz">Automostriz</option>
+              <option value="bebé">Bebé</option>
+              <option value="belleza">Belleza y cuidado personal</option>
+              <option value="cine">Cine y TV</option>
+              <option value="computadora">Computadoras</option>
+              <option value="deportes">
+                Deportes y actividades al aire libre
+              </option>
+              <option value="electronicos">Electronicos</option>
+              <option value="equipaje">Equipaje</option>
+              <option value="herramientas_mejoramiento_lugar">
+                Herramientas y mejoramiento del lugar
+              </option>
+              <option value="hogar_cocina">Hogar y cocina</option>
+              <option value="industrial_cientifico">
+                Industrial y científico
+              </option>
+              <option value="mascotas">Insumos para mascotas</option>
+              <option value="juguetes">Juguetes y juegos</option>
+              <option value="libros">Libros</option>
+              <option value="niñas">Modas de niñas</option>
+              <option value="niños">Modas de niños</option>
+              <option value="hombre">Moda para Hombre</option>
+              <option value="mujer">Moda para Mujer</option>
+              <option value="musica">Música MP3</option>
+              <option value="cd , vinilos">Música , CD y vinilos</option>
+              <option value=" ofertas">Ofertas</option>
+              <option value="prime-video">Prime Video</option>
+              <option value="salud">Salud y producto para el hogar</option>
+              <option value="sofware">Sofware</option>
+              <option value="tienda-kindle">Tienda Kindle</option>
+              <option value="tienda-videojuegos">Tienda Videojuegos</option>
             </select>
             <input type="text" placeholder="Buscar en Amazon" />
             <button type="submit">
@@ -72,10 +79,10 @@
       </div>
 
       <div class="idiomas-container flex">
-        <a href="">
+        <a href="#">
           <img src="src/icons/bandera-us.svg" alt="bandera-us-icono" />
-          <a href=""> <b>ES</b> </a>
-          <div class="">
+          <a href="#"> <b>ES</b> </a>
+          <div>
             <img
               src="src/icons/flecha-desplegable.svg"
               alt="flecha-desplegable-icono"
@@ -108,12 +115,12 @@
       </div>
 
       <div class="identificate-container flex">
-        <a href="">
+        <a href="#">
           <div class="column">
-            <a href=""> Hola , Identificate </a>
+            <a href="#"> Hola , Identificate </a>
             <b>Cuenta y listas </b>
           </div>
-          <div class="">
+          <div>
             <img
               src="src/icons/flecha-desplegable.svg"
               alt="flecha-desplegable-icono"
@@ -130,33 +137,35 @@
 
         <div class="panel-identificate column">
           <div>
-            <a href="">Indentificate</a>
+            <a href="#">Indentificate</a>
           </div>
           <div class="flex">
-            <p href="">¿Eres cliente nuevo?</p>
-            <a href="">Empieza aqui</a>
+            <p href="#">¿Eres cliente nuevo?</p>
+            <a href="#">Empieza aqui</a>
           </div>
 
           <div class="flex">
             <div class="column">
               <b>Tus listas</b>
-              <a href="">Crear una Lista </a>
-              <a href="">Encuentra una Lista o Lista de regalos </a>
+              <a href="#">Crear una Lista </a>
+              <a href="#">Encuentra una Lista o Lista de regalos </a>
             </div>
 
             <div class="column">
               <b>Tu cuenta</b>
-              <a href="">Tu Cuenta</a>
-              <a href="">Cuenta</a>
-              <a href="">Pedidos</a>
-              <a href="">Recomendaciones</a>
-              <a href="">Historial de Búsqueda</a>
-              <a href=""> Lista de videos </a>
-              <a href=""> Compras y Rentas de Video </a>
-              <a href=""> Kindle Unlimited Contenido y dispositivos </a>
-              <a href="">Artículos de Subscribe & Save Membresías y suscripciones</a>
+              <a href="#">Tu Cuenta</a>
+              <a href="#">Cuenta</a>
+              <a href="#">Pedidos</a>
+              <a href="#">Recomendaciones</a>
+              <a href="#">Historial de Búsqueda</a>
+              <a href="#"> Lista de videos </a>
+              <a href="#"> Compras y Rentas de Video </a>
+              <a href="#"> Kindle Unlimited Contenido y dispositivos </a>
+              <a href="#"
+                >Artículos de Subscribe & Save Membresías y suscripciones</a
+              >
 
-              <a href=""> Biblioteca de Música</a>
+              <a href="#"> Biblioteca de Música</a>
             </div>
           </div>
         </div>
@@ -164,7 +173,7 @@
 
       <div class="flex">
         <div class="column">
-          <a href=""> Devoluciones</a>
+          <a href="#"> Devoluciones</a>
           <b> y Pedidos</b>
         </div>
         <div class="carrito-container flex">
@@ -224,7 +233,7 @@
                   />
                   <p>Espejos</p>
                 </div>
-                <a href="">Más información</a>
+                <a href="#">Más información</a>
               </div>
             </div>
 
@@ -262,7 +271,7 @@
                   />
                   <p>Nintendo Switch</p>
                 </div>
-                <a href="">Compra lo último en juegos</a>
+                <a href="#">Compra lo último en juegos</a>
               </div>
             </div>
 
@@ -300,7 +309,7 @@
                   />
                   <p>Sandalias</p>
                 </div>
-                <a href="">Compra más</a>
+                <a href="#">Compra más</a>
               </div>
             </div>
 
@@ -338,7 +347,7 @@
                   />
                   <p>Tazas de desayuno</p>
                 </div>
-                <a href="">Ver más</a>
+                <a href="#">Ver más</a>
               </div>
             </div>
           </div>
@@ -537,7 +546,7 @@
                   />
                   <p>Hogar inteligente</p>
                 </div>
-                <a href="">Más información</a>
+                <a href="#">Más información</a>
               </div>
             </div>
 
@@ -575,7 +584,7 @@
                   />
                   <p>Fragancias</p>
                 </div>
-                <a href="">Explora todo en Belleza</a>
+                <a href="#">Explora todo en Belleza</a>
               </div>
             </div>
 
@@ -613,7 +622,7 @@
                   />
                   <p>Niños</p>
                 </div>
-                <a href="">Descubre más</a>
+                <a href="#">Descubre más</a>
               </div>
             </div>
 
@@ -627,7 +636,7 @@
                   />
                 </div>
               </div>
-              <a href="">Comprar ahora</a>
+              <a href="#">Comprar ahora</a>
             </div>
           </div>
 
@@ -637,76 +646,56 @@
             <div class="flex producto">
               <img
                 src="https://m.media-amazon.com/images/I/51wDsZxtTLL._AC_SY200_.jpg"
-                alt=""
-              />
-              <img
-                src="https://m.media-amazon.com/images/I/51wDsZxtTLL._AC_SY200_.jpg"
-                alt=""
+                alt="camiseta"
               />
 
               <img
                 src="https://m.media-amazon.com/images/I/61IqZD8hYDL._AC_SY200_.jpg"
-                alt=""
+                alt="pantalones"
               />
               <img
                 src="https://m.media-amazon.com/images/I/61C+zURu0EL._AC_SY200_.jpg"
-                alt=""
+                alt="camiseta-2"
               />
 
               <img
                 src="https://m.media-amazon.com/images/I/513fraGQXWL._AC_SY200_.jpg"
-                alt=""
+                alt="camiseta-3-blanca"
               />
 
-              <img
-                src="https://m.media-amazon.com/images/I/513fraGQXWL._AC_SY200_.jpg"
-                alt=""
-              />
-
-              <img
-                src="https://m.media-amazon.com/images/I/513fraGQXWL._AC_SY200_.jpg"
-                alt=""
-              />
-
-              <img
-                src="https://m.media-amazon.com/images/I/513fraGQXWL._AC_SY200_.jpg"
-                alt=""
-              />
+             
 
               <img
                 src="https://m.media-amazon.com/images/I/61SuPkDGYfL._AC_SY200_.jpg"
-                alt=""
+                alt="chanclas"
               />
 
               <img
                 src="https://m.media-amazon.com/images/I/51rkKPruYvL._AC_SY200_.jpg"
-                alt=""
+                alt="camiseta-blanca-3"
               />
 
               <img
                 src="https://m.media-amazon.com/images/I/612gGYUB+gL._AC_SY200_.jpg"
-                alt=""
+                alt="pantalones"
               />
 
               <img
                 src="https://m.media-amazon.com/images/I/71XXRwqp+XL._AC_SY200_.jpg"
-                alt=""
+                alt="camisetas"
               />
               <img
                 src="https://m.media-amazon.com/images/I/61aUZQs50XL._AC_SY200_.jpg"
-                alt=""
+                alt="pantalones-2"
               />
               <img
                 src="https://m.media-amazon.com/images/I/71EndC6SdoL._AC_SY200_.jpg"
-                alt=""
+                alt="camiseta-mujer"
               />
-              <img
-                src="https://m.media-amazon.com/images/I/51lcacCccHL._AC_SY200_.jpg"
-                alt=""
-              />
+              
               <img
                 src="https://m.media-amazon.com/images/I/71Oy6LGOy7L._AC_SY200_.jpg"
-                alt=""
+                alt="guantes"
               />
             </div>
           </div>
@@ -835,7 +824,7 @@
                   />
                   <p>Accesorios para equipos</p>
                 </div>
-                <a href="">Ver más</a>
+                <a href="#">Ver más</a>
               </div>
             </div>
 
@@ -873,7 +862,7 @@
                   />
                   <p>Organización de almacenamiento</p>
                 </div>
-                <a href="">Ver más</a>
+                <a href="#">Ver más</a>
               </div>
             </div>
 
@@ -911,7 +900,7 @@
                   />
                   <p>Taza de desayuno</p>
                 </div>
-                <a href="">Ver más</a>
+                <a href="#">Ver más</a>
               </div>
             </div>
 
@@ -949,7 +938,7 @@
                   />
                   <p>Juguetes de simulación</p>
                 </div>
-                <a href="">Ver más</a>
+                <a href="#">Ver más</a>
               </div>
             </div>
           </div>

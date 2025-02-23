@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
     <link rel="stylesheet" href="css/body.css" />
+    <link rel="stylesheet" href="css/inicio.css"/>
+    <link rel="stylesheet" href="css/biblioteca.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/reproduccion.css">
+
     <link
       rel="icon"
       href="https://open.spotifycdn.com/cdn/images/favicon.0f31d2ea.ico"
@@ -12,16 +17,16 @@
   </head>
 
   <body>
-    
-    
     <div class="container">
-
-<!-- la navbar está formada por 3 partes :  la parte izquierda , la del centro y la del derecho -->
+      <!-- la navbar está formada por 3 partes :  la parte izquierda , la del centro y la del derecho -->
       <nav>
-
         <div class="left">
           <a href="index.html" class="boton-spotify">
-            <img src="src/icons/spotify.svg" alt="logo-spotify" id="spotify-logo"/>
+            <img
+              src="src/icons/spotify.svg"
+              alt="logo-spotify"
+              id="spotify-logo"
+            />
           </a>
         </div>
 
@@ -31,7 +36,6 @@
           </a>
 
           <div class="search flex">
-
             <div class="left">
               <img src="src/icons/search.svg" alt="busqueda-icono" />
               <input type="text" placeholder="¿Qué quieres reproducir?" />
@@ -43,13 +47,13 @@
                 <img src="src/icons/collections.svg" alt="colecciones-icono" />
               </a>
             </div>
-
-          </div> <!-- cerrar el div de busqueda -->
-        </div> <!-- cerrar el div del centro -->
+          </div>
+          <!-- cerrar el div de busqueda -->
+        </div>
+        <!-- cerrar el div del centro -->
 
         <div class="right">
-
-          <a class="button-navbar" href="#"><b>Descubrir Premium</b></a>
+          <a id="descubrir" href="#"><b>Descubrir Premium</b></a>
 
           <a href="#" class="flex">
             <img src="src/icons/download.svg" alt="descarga-icono" />
@@ -64,13 +68,14 @@
             <div class="circulo perfil">
               <b> N </b>
             </div>
-
-          </div>  <!-- cerrar el div de circulo -->
-       </div>  <!--  cerrar el div de la derecha de la navbar -->
-
+          </div>
+          <!-- cerrar el div de circulo -->
+        </div>
+        <!--  cerrar el div de la derecha de la navbar -->
       </nav>
 
       <section class="biblioteca">
+        <!-- si no me daba problemas en los estilos -->
         <div class="menu flex">
           <div class="left">
             <img
@@ -78,6 +83,7 @@
               src="src/icons/library.svg"
               alt="libreria-icono"
             />
+
             <b id="text-biblioteca">Tu biblioteca</b>
           </div>
 
@@ -88,6 +94,7 @@
                 alt="añadir-libreria-icono"
               />
             </a>
+
             <a href="#">
               <img
                 src="src/icons/arrow-navbar-library.svg"
@@ -95,7 +102,6 @@
               />
             </a>
           </div>
-
         </div>
 
         <div class="buttons">
@@ -126,7 +132,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Canciones que te gustan</h2>
               <p class="flex nombre-lista">Lista <span>.</span>553 canciones</p>
             </div>
@@ -140,21 +146,21 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Your Top Songs 2023</h2>
               <p class="flex nombre-lista">Lista <span>.</span>Spotify</p>
             </div>
           </div>
 
           <div class="artist flex">
-            <div img-artist>
+            <div>
               <img
                 src="https://i.scdn.co/image/ab6761610000101f4a21b4760d2ecb7b0dcdc8da"
                 alt="Billie-Eilish-Artista"
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Billie Eilish</h2>
               <p class="nombre-artista">Artista</p>
             </div>
@@ -168,7 +174,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>El arte de ser nosotros (playlist oficial)</h2>
               <p class="flex nombre-lista">Lista <span>.</span>Inma Rubiales</p>
             </div>
@@ -182,7 +188,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>David Bisbal</h2>
               <p class="nombre-artista">Artista</p>
             </div>
@@ -196,21 +202,21 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Lista de los 40 (Oficial) | 🇪🇸</h2>
               <p class="flex nombre-lista">Lista <span>.</span>los 40</p>
             </div>
           </div>
 
           <div class="artist flex">
-            <div img-artist>
+            <div>
               <img
                 src="https://i.scdn.co/image/ab6761610000101f8ae7f2aaa9817a704a87ea36"
                 alt="Justin-Bieber-Artista"
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Justin Bieber</h2>
               <p class="nombre-artista">Artista</p>
             </div>
@@ -224,21 +230,21 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>TOP LATINO 2025</h2>
               <p class="flex nombre-lista">Lista <span>.</span>Filtr Éxitos</p>
             </div>
           </div>
 
           <div class="artist flex">
-            <div img-artist>
+            <div>
               <img
                 src="https://i.scdn.co/image/ab6761610000101fc3c753851496854e29abff7a"
                 alt="Selena-Gomez-Artista"
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Selena Gomez</h2>
               <p class="nombre-artista">Artista</p>
             </div>
@@ -252,7 +258,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>EUROPA FM</h2>
               <p class="flex nombre-lista">
                 Lista <span>.</span>Carlos Calzada
@@ -268,7 +274,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>TOP LATINO 2025</h2>
               <p class="flex nombre-lista">Lista <span>.</span>Filtr Éxitos</p>
             </div>
@@ -282,7 +288,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>RAGGAETON ANTIGUO</h2>
               <p class="flex nombre-lista">Lista <span>.</span>🎤</p>
             </div>
@@ -296,7 +302,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Pablo López — El Patio</h2>
               <p class="flex nombre-lista">
                 Lista <span>.</span>Inmaculada Gomez Gil
@@ -312,7 +318,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Abraham Mateo - Éxitos: Lo Mejor de Abraham Mateo</h2>
               <p class="flex nombre-lista">Lista <span>.</span>553 canciones</p>
             </div>
@@ -326,7 +332,7 @@
               />
             </div>
 
-            <div>
+            <div class="column">
               <h2>Olivia Rodrigo full playlist</h2>
               <p class="flex nombre-lista">Lista <span>.</span>553 canciones</p>
             </div>
@@ -1315,13 +1321,11 @@
               <img src="src/icons/facebook.svg" alt="Instagram-icono" />
             </a>
           </div>
-          
         </footer>
 
         <div class="linea linea-divisoria">
           <p id="copyright">© 2025 Spotify AB</p>
         </div>
-        
       </section>
 
       <section class="reproduccion">

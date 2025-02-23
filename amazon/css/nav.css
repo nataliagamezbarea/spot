@@ -1,0 +1,141 @@
+nav {
+  align-items: center;
+  background-color: #131921;
+  color: white;
+  display: flex;
+  display: flex;
+  gap: 20px;
+  height: 7vh;
+  width: 99vw;
+}
+
+.search {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: white;
+}
+
+nav img.icono {
+  width: 25.2px;
+}
+
+.enviar {
+  font-size: 14px;
+}
+
+.enviar p {
+  font-size: 12px;
+}
+
+img#Logo-Amazon {
+  width: 120px;
+}
+
+.panel-idiomas {
+  background-color: rgb(255, 246, 246);
+  color: black;
+  display: none;
+  flex-direction: column;
+  height: 570px;
+  position: absolute;
+  top: 120%;
+  width: 260px;
+}
+
+.panel-identificate {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  display: none;
+  height: 300px;
+  position: absolute;
+  top: 97%;
+  width: 600px;
+}
+
+img.carrito {
+  width: 230px;
+}
+
+.column:hover {
+  border: solid 1px white;
+}
+
+.idiomas-container:hover .panel-idiomas,
+.idiomas-container:hover .flecha-arriba,
+.identificate-container:hover .panel-identificate,
+.identificate-container:hover .flecha-arriba {
+  display: block;
+  display: flex;
+}
+
+.panel-identificate a {
+  color: black;
+}
+
+.flecha-arriba {
+  display: none;
+  left: 40%;
+  position: absolute;
+  top: 80%;
+}
+
+.flecha-arriba img {
+  width: 30px;
+}
+
+.carrito-container {
+  position: relative;
+}
+
+.search:focus-within {
+  border: solid 5px #f08804;
+  border-radius: 10px;
+  height: auto;
+}
+
+.numero-carrito {
+  bottom: 0;
+  color: #f08804;
+  font-size: 20px;
+  font-weight: 700;
+  left: 40%;
+  position: absolute;
+  top: 1%;
+}
+
+.idiomas-container,
+.identificate-container {
+  gap: 10px;
+  position: relative;
+}
+
+.search input {
+  height: 30px;
+  margin-bottom: 10px;
+  width: 46vw;
+}
+
+select {
+  border-radius: 7px;
+  color: rgba(0, 0, 0, 0.681);
+  height: 37px;
+  padding: 10px;
+  width: 200px;
+}
+
+nav {
+  align-items: center;
+  justify-content: center;
+}
+
+nav button {
+  background-color: #f3a847;
+}
+
+img#logo-carrito {
+  width: 70px;
+}
