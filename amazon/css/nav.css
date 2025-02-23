@@ -1,19 +1,12 @@
 nav {
-  align-items: center;
   background-color: #131921;
   color: white;
   display: flex;
-  display: flex;
   gap: 20px;
-  height: 7vh;
-  width: 99vw;
+  align-items: center;
 }
 
-.search {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-}
+
 
 nav a {
   color: white;
@@ -57,8 +50,13 @@ img#Logo-Amazon {
 }
 
 img.carrito {
-  width: 230px;
+  width: 60px;
 }
+
+.search input {
+  margin-left: -10px;
+}
+
 
 .column:hover {
   border: solid 1px white;
@@ -115,9 +113,12 @@ img.carrito {
 
 .search input {
   height: 30px;
-  margin-bottom: 10px;
-  width: 46vw;
 }
+
+.search input {
+  width: 860px;
+}
+
 
 select {
   border-radius: 7px;
@@ -129,7 +130,7 @@ select {
 
 nav {
   align-items: center;
-  justify-content: center;
+  padding-left: 10px;
 }
 
 nav button {
@@ -138,4 +139,24 @@ nav button {
 
 img#logo-carrito {
   width: 70px;
+}
+
+
+.navbar-2 {
+  background-color: #232F3E;
+  justify-content: flex-start;
+  padding-left: 20px;
+  height: 40px;
+}
+
+.navbar-2 img {
+  height: 14px;
+  align-items: center;
+}
+
+.search {
+  display: flex;
+  align-items: center; /* Centra los elementos verticalmente */
+  gap: 10px; /* Espacio entre el select, input y button */
+  height: 30px;
 }

@@ -15,7 +15,7 @@ a {
 
 .cuadricula {
   display: grid;
-  gap: 90px;
+  gap: 10px;
   grid-template-columns: repeat(4, 1fr);
 }
 
@@ -85,7 +85,6 @@ body {
 .column {
   display: flex;
   flex-direction: column;
-  margin: 10px;
 }
 
 .productos-linea {
