@@ -54,16 +54,17 @@ footer .column {
   padding: 70px;
 }
 
-footer a {
-  padding-left: 0;
+footer img {
+  width: 100px;
+  height: 20px;
 }
 
-.redes-sociales {
+footer .redes-sociales {
   padding: 60px;
   padding-top: 90px;
 }
 
-.linea-divisoria {
+footer .linea-divisoria {
   height: 1px;
   margin: 10px;
   width: 100%;
@@ -71,9 +72,15 @@ footer a {
 
 p#copyright {
   font-size: 14px;
-  padding: 10px;
+  padding: 30px;
+  padding-top: 10px;
 }
 
+.linea.linea-divisoria {
+  width: 100%;
+  margin: 10px;
+  height: 1px;
+}
 .circulo-redes-sociales {
   background-color: #2a2a2a;
   height: 10px;
@@ -107,6 +114,11 @@ p#copyright {
   position: relative;
 }
 
+
+.container-album img {
+  height: 200px;
+  width: 200px;
+}
 .circle-play-container {
   bottom: 0;
   height: 40px;
@@ -170,8 +182,8 @@ p#copyright {
 }
 
 img.artist-img-home {
-  height: 228px;
-  width: 225px;
+  height: 210px;
+  width: 200px;
 }
 
 .container-artist,
