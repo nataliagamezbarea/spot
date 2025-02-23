@@ -61,10 +61,13 @@ img#Logo-Amazon {
   background-color: rgb(255, 255, 255);
 }
 
-.cuadricula.flex {
+/* # error .cuadricula.flex */
+
+.cuadricula {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 90px;
+
 }
 
 .producto {
@@ -72,14 +75,22 @@ img#Logo-Amazon {
   grid-template-columns: repeat(2, 1fr);
 }
 
+
+.fondo {
+  position: relative;
+  
+}
+
+.containers {
+  position: absolute;
+  top: 500px;
+  left: 30px;
+}
+
 body {
   background-color: #e3e6e6;
 }
 
-.container {
-  padding-left: 150px;
-  padding-right: 150px;
-}
 
 .producto.diferentes {
   display: grid;
@@ -224,6 +235,7 @@ img.carrito {
   border-radius: 10px;
   height: auto;
 }
+
 .numero-carrito {
   position: absolute;
   top: 1%;
@@ -233,3 +245,9 @@ img.carrito {
   font-size: 20px;
   font-weight: 700;
 }
+
+
+.productos-linea {
+  width: 2055px;
+}
+
