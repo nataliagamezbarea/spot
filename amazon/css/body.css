@@ -12,11 +12,13 @@ a {
 }
 
 /* # error .cuadricula.flex */
-
+body {
+  overflow-x: hidden;
+}
 .cuadricula {
   display: grid;
   gap: 10px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 0.2fr);
 }
 
 .producto {
@@ -25,14 +27,15 @@ a {
 }
 
 .fondo {
-  background-image: url("https://m.media-amazon.com/images/I/711NdF5k91L._SX3000_.jpg");
-  height: 50vh;
-  padding-top: 45vh;
   position: relative;
+  width: 100%;
+  padding-left: 150px;
+
 }
 
 .producto-container {
   background-color: rgb(255, 255, 255);
+  width: 400px;
 }
 
 .panel-identificate .flex {
@@ -40,10 +43,11 @@ a {
   justify-content: baseline;
 }
 
+
 .containers {
-  left: 30px;
   position: absolute;
-  top: 500px;
+  top: 400px;
+  left:  180px;
 }
 
 body {
@@ -78,9 +82,7 @@ body {
   display: flex;
 }
 
-.producto {
-  overflow-x: scroll;
-}
+
 
 .column {
   display: flex;
@@ -88,5 +90,17 @@ body {
 }
 
 .productos-linea {
-  width: 2055px;
+  width: 1630px;
+  overflow-x: hidden;
+}
+
+.productos-linea:hover {
+  overflow-x: scroll;
+}
+
+.recomendaciones {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
