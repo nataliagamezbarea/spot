@@ -14,7 +14,30 @@ a {
 /* # error .cuadricula.flex */
 body {
   overflow-x: hidden;
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "nav2"
+    "contenedor"
+    "recomendaciones"
+    "footer";
 }
+
+footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232f3e;
+  color: #ddd;
+  width: 100%;
+  top: 3300px;
+}
+
+.containers {
+  grid-area: contenedor;
+}
+
 .cuadricula {
   display: grid;
   gap: 10px;
@@ -30,7 +53,7 @@ body {
   position: relative;
   width: 100%;
   padding-left: 150px;
-
+  justify-items: center;
 }
 
 .producto-container {
@@ -43,11 +66,10 @@ body {
   justify-content: baseline;
 }
 
-
 .containers {
   position: absolute;
   top: 400px;
-  left:  180px;
+  left: 180px;
 }
 
 body {
@@ -82,8 +104,6 @@ body {
   display: flex;
 }
 
-
-
 .column {
   display: flex;
   flex-direction: column;
@@ -99,8 +119,78 @@ body {
 }
 
 .recomendaciones {
+  grid-area: recomendaciones;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
+  margin-top: 10px;
+  height: 100px;
+  position: relative;
+  margin: 10px;
+  top: 3300px;
+}
+
+.recomendaciones {
+  font-size: 24px;
+  gap: 10px;
+}
+
+.recomendaciones p,
+.recomendaciones a {
+  font-size: 12px;
+}
+
+.recomendaciones button {
+  border: none;
+  width: 300px;
+  height: 31px;
+  padding: 10px;
+}
+
+.recomendaciones .flex a {
+  color: #2162a1;
+  text-decoration: underline;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.recomendaciones hr {
+  width: 100%;
+  background-color: rgb(209, 209, 209);
+  padding: 0.02px;
+}
+
+footer {
+  gap: 10px;
+}
+
+footer .inicio {
+  background-color: #37475a;
+}
+
+footer .inicio b {
+  color: white;
+}
+
+footer .footer-inicio {
+  background-color: #37475a;
+  width: 100%;
+  text-align: center;
+  height: 39px;
+  align-content: center;
+}
+
+footer img {
+  width: 130px;
+}
+
+footer .opciones {
+  display: flex;
+}
+
+footer .option {
+  display: flex;
+  border: solid white 2px;
 }
