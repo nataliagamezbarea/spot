@@ -27,6 +27,9 @@ img#Logo-Amazon {
   width: 120px;
 }
 
+
+
+
 .panel-idiomas {
   z-index: 1;
   background-color: rgb(255, 246, 246);
@@ -56,9 +59,9 @@ img.carrito {
 
 
 
-.column:hover {
+nav .column:hover , img#Logo-Amazon:hover , .idiomas-container:hover {
   border: solid 1px white;
-}
+} 
 
 .idiomas-container:hover .panel-idiomas,
 .idiomas-container:hover .flecha-arriba,
