@@ -96,8 +96,14 @@ body {
   grid-template-areas:
     "imagen imagen imagen"
     "imagen2 imagen3 imagen4";
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3,140px);
 }
+
+.imagen-diferente img {
+  padding: 10px;
+  width: 380px;
+}
+
 
 .imagen {
   grid-area: imagen;
