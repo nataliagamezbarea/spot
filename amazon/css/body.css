@@ -198,7 +198,7 @@ footer #idioma {
   padding-right: 4px;
 }
 
-footer .footer-2 {
+footer.footer-2.flex.column{
   font-size: 12px;
   background-color: #131a22;
 }
