@@ -5,8 +5,6 @@ nav {
   gap: 20px;
 }
 
-
-
 nav a {
   color: white;
 }
@@ -27,41 +25,45 @@ img#Logo-Amazon {
   width: 120px;
 }
 
-
-
-
 .panel-idiomas {
   z-index: 1;
   background-color: rgb(255, 246, 246);
   color: black;
   display: none;
   flex-direction: column;
-  height: 570px;
   position: absolute;
-  top: 120%;
+  top: 38px;
+  left: -40px;
   width: 260px;
+}
+
+.panel-idiomas a {
+  text-decoration: underline;
+  color: #2162a1;
 }
 
 .panel-identificate {
   z-index: 1;
   background-color: rgb(255, 255, 255);
   color: black;
-  display: none;
+  display: none; 
   height: 300px;
+  gap: 20px;
   position: absolute;
-  top: 97%;
+  top: 60px;
   width: 600px;
+  left: -180px;
 }
 
 img.carrito {
   width: 60px;
 }
 
-
-
-nav .column:hover , img#Logo-Amazon:hover , .idiomas-container:hover {
+nav .column:hover,
+img#Logo-Amazon:hover,
+.idiomas-container:hover {
   border: solid 1px white;
-} 
+}
 
 .idiomas-container:hover .panel-idiomas,
 .idiomas-container:hover .flecha-arriba,
@@ -69,6 +71,15 @@ nav .column:hover , img#Logo-Amazon:hover , .idiomas-container:hover {
 .identificate-container:hover .flecha-arriba {
   display: block;
   display: flex;
+  gap: 10px;
+  padding: 10px;
+
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
+  accent-color: #E16119; 
 }
 
 .panel-identificate a {
@@ -101,9 +112,9 @@ nav .column:hover , img#Logo-Amazon:hover , .idiomas-container:hover {
   color: #f08804;
   font-size: 20px;
   font-weight: 700;
-  left: 30px;
+  left: 35px;
   position: absolute;
-  top: 10px;
+  top: 20px;
 }
 
 .idiomas-container,
@@ -112,13 +123,10 @@ nav .column:hover , img#Logo-Amazon:hover , .idiomas-container:hover {
   position: relative;
 }
 
-
-
 .search input {
   width: 700px;
   margin-left: -10px;
 }
-
 
 select {
   border-radius: 7px;
@@ -149,9 +157,8 @@ nav .center {
   justify-content: center;
 }
 
-
 .navbar-2 {
-  background-color: #232F3E;
+  background-color: #232f3e;
   justify-content: flex-start;
   padding-left: 20px;
   height: 40px;
@@ -164,15 +171,14 @@ nav .center {
 
 .search {
   display: flex;
-  align-items: center; 
-  gap: 10px; 
+  align-items: center;
+  gap: 10px;
   height: 30px;
 }
 
 input[type="text"] {
-  padding:  9px;
+  padding: 9px;
 }
-
 
 .search img {
   width: 20px;
@@ -183,13 +189,12 @@ input[type="text"] {
   height: 600px;
 }
 
-
 footer a {
-  color: #DDD;
+  color: #ddd;
 }
 
 button {
-  background-color:#FFCE12;
+  background-color: #ffce12;
   border-radius: 10px;
   font-size: 12px;
   padding-left: 10px;

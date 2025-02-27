@@ -73,10 +73,13 @@ footer .column {
   width: 400px;
 }
 
-.panel-identificate .flex {
+.panel-identificate {
   align-items: baseline;
-  justify-content: baseline;
+  align-items: center;
+  padding: 10px;
+  
 }
+
 
 .containers {
   position: absolute;
@@ -114,6 +117,7 @@ body {
 
 .flex {
   display: flex;
+  gap: 10px;
 }
 
 .column {
@@ -201,16 +205,13 @@ footer img {
 footer .opciones {
   display: flex;
   align-items: center;
-
 }
 
 .footer-2 p {
   color: grey;
   font-size: 12px;
   border-radius: 10px;
-
 }
-
 
 ::-webkit-scrollbar {
   width: 12px;
@@ -221,7 +222,6 @@ footer .opciones {
   background-color: gray;
   border-radius: 6px;
 }
-
 
 footer .option {
   display: flex;
@@ -238,15 +238,31 @@ footer #idioma {
   padding-right: 4px;
 }
 
-footer.footer-2{
+footer.footer-2 {
   font-size: 12px;
-  background-color: #131A22;
+  background-color: #131a22;
 }
 
-footer a:hover , footer p:hover  {
+footer a:hover,
+footer p:hover {
   text-decoration: underline;
 }
 
-.producto-container , .productos-linea {
+.producto-container,
+.productos-linea {
   margin-top: 20px;
+}
+
+
+nav .center {
+  padding: 10px;
+}
+
+
+#identificate {
+  background-color: yellow;
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
