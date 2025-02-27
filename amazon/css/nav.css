@@ -3,6 +3,9 @@ nav {
   color: white;
   display: flex;
   gap: 20px;
+  align-items: center;
+  justify-content: center;
+  padding-left: 10px;
 }
 
 nav a {
@@ -25,13 +28,16 @@ img#Logo-Amazon {
   width: 120px;
 }
 
-.panel-idiomas {
+.panel-idiomas, .panel-identificate {
+  position: absolute;
+  display: none;
   z-index: 1;
+}
+
+.panel-idiomas {
   background-color: rgb(255, 246, 246);
   color: black;
-  display: none;
   flex-direction: column;
-  position: absolute;
   top: 38px;
   left: -40px;
   width: 260px;
@@ -43,13 +49,10 @@ img#Logo-Amazon {
 }
 
 .panel-identificate {
-  z-index: 1;
   background-color: rgb(255, 255, 255);
   color: black;
-  display: none; 
   height: 300px;
   gap: 20px;
-  position: absolute;
   top: 60px;
   width: 600px;
   left: -180px;
@@ -69,17 +72,15 @@ img#Logo-Amazon:hover,
 .idiomas-container:hover .flecha-arriba,
 .identificate-container:hover .panel-identificate,
 .identificate-container:hover .flecha-arriba {
-  display: block;
   display: flex;
   gap: 10px;
   padding: 10px;
-
 }
 
 input[type="radio"] {
   width: 20px;
   height: 20px;
-  accent-color: #E16119; 
+  accent-color: #E16119;
 }
 
 .panel-identificate a {
@@ -134,12 +135,6 @@ select {
   height: 37px;
   padding: 10px;
   width: 200px;
-}
-
-nav {
-  align-items: center;
-  justify-content: center;
-  padding-left: 10px;
 }
 
 nav button {
@@ -197,6 +192,5 @@ button {
   background-color: #ffce12;
   border-radius: 10px;
   font-size: 12px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
 }

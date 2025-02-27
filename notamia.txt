@@ -1,4 +1,0 @@
-arreglar que he quitado un grid 
-
-
-estilos cuadros de idiomas

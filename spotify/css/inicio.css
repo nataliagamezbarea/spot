@@ -7,23 +7,23 @@
   padding: 10px;
 }
 
-.container-circle-play {
+.container-circle-play,
+.artist.popular .container-circle-play {
   align-items: center;
   background-color: #1ed760;
   border-radius: 50%;
-  display: flex;
-  display: none; 
-  height: auto;
+  display: none;
   justify-content: center;
   margin-right: 20px;
   padding: 10px;
   width: 20px;
+  height: auto;
 }
-
 
 img.circle-img {
   width: 20px;
 }
+
 .inicio b {
   font-size: 15px;
   font-weight: 600;
@@ -41,6 +41,7 @@ h2.title {
   color: black;
   margin-left: 30px;
 }
+
 .inicio .buttons {
   background-color: #050f17;
   width: 100%;
@@ -66,23 +67,19 @@ footer .redes-sociales {
   padding-top: 90px;
 }
 
-footer .linea-divisoria {
+footer .linea-divisoria,
+.p#copyright,
+.linea.linea-divisoria {
   height: 1px;
   margin: 10px;
   width: 100%;
 }
 
-p#copyright {
-  font-size: 14px;
-  padding: 30px;
+footer .linea-divisoria,
+.p#copyright {
   padding-top: 10px;
 }
 
-.linea.linea-divisoria {
-  width: 100%;
-  margin: 10px;
-  height: 1px;
-}
 .circulo-redes-sociales {
   background-color: #2a2a2a;
   height: 10px;
@@ -102,11 +99,6 @@ p#copyright {
   border-radius: 10px;
 }
 
-.popular:hover {
-  background-color: #333333;
-  border-radius: 10px;
-}
-
 .artist.popular .container-circle-play {
   margin-bottom: 10px;
 }
@@ -114,13 +106,12 @@ p#copyright {
 .container-artist,
 .container-album {
   position: relative;
+  padding: 10px;
 }
-
 
 .container-album img {
   width: 200px;
 }
-
 
 .circle-play-container {
   bottom: 0;
@@ -139,7 +130,6 @@ p#copyright {
 .genero-container {
   background-color: rebeccapurple;
   border-radius: 10px;
-
   height: 200px;
   margin: 10px;
   width: 100px;
@@ -157,9 +147,6 @@ p#copyright {
 .albums-inicio .album {
   align-items: center;
   display: flex;
-}
-
-.albums-inicio .album {
   background-color: rgba(215, 215, 215, 0.2);
 }
 
@@ -168,15 +155,9 @@ p#copyright {
   width: 50px;
 }
 
-.album.flex:hover .container-circle-play {
-  display: block;
-  display: flex;
-}
-
+.album.flex:hover .container-circle-play,
 .artist.popular:hover .container-circle-play {
-  display: block;
   display: flex;
-  height: auto;
 }
 
 .artistas-populares .circle-play-container {
@@ -187,11 +168,6 @@ p#copyright {
 img.artist-img-home {
   height: 210px;
   width: 200px;
-}
-
-.container-artist,
-.container-album {
-  padding: 10px;
 }
 
 @media only screen and (max-width: 1000px) {

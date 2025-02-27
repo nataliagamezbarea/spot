@@ -4,10 +4,8 @@
   justify-content: space-between;
 }
 
-/* simbolo + de reproduccion */
 .añadir-playlist {
   display: flex;
-  /* width: 1px; */
 }
 
 .reproductor {
@@ -17,11 +15,6 @@
   height: 5px;
   justify-content: space-between;
   width: 390px;
-}
-
-.reproduccion {
-  display: flex;
-  justify-content: space-between;
 }
 
 .sonido {
@@ -62,7 +55,7 @@
 }
 
 .nombre-lista,
-nombre-artista {
+.nombre-artista { 
   display: flex;
   font-size: 14px;
   gap: 5px;
